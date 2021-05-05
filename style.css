@@ -181,18 +181,18 @@
 }
 
 .wave1 {
-    background-image: url('https://bowonkim.github.io/bookcover/image/wave1.png');
+    background-image: url('../../wave1.png');
     animation: waveL 20s linear infinite;
 }
 
 .wave2 {
-    background-image: url('https://bowonkim.github.io/bookcover/wave3.png');
+    background-image: url(../image/wave3.png);
     animation: waveR 10s linear infinite;
     height: 120%;
 }
 
 .wave3 {
-    background-image: url('https://bowonkim.github.io/bookcover/wave2.png');
+    background-image: url(../wave2.png);
     animation: waveL 17s linear infinite;
 }
 
