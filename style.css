@@ -1,0 +1,233 @@
+@import url("https://use.typekit.net/fde5eor.css");
+.book {
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 375px;
+    height: 600px;
+    border-radius: 0 25px 25px 0;
+    background-color: #82c9db;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/*cloud*/
+
+.cloud {
+    z-index: -1;
+    width: 400px;
+    height: 200px;
+    border-radius: 35px;
+    background: #f8fcff;
+    background: linear-gradient(top, #f8fcff 50%, #ccedfd 100%);
+    background: -webkit-linear-gradient(top, #f8fcff 50%, #ccedfd 100%);
+    background: -moz-linear-gradient(top, #f8fcff 50%, #ccedfd 100%);
+    background: -ms-linear-gradient(top, #f8fcff 50%, #ccedfd 100%);
+    background: -o-linear-gradient(top, #f8fcff 50%, #ccedfd 100%);
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    box-shadow: 5px 0px 30px #82c9db;
+    position: relative;
+    margin: 120px auto 20px;
+    filter: blur(0px);
+}
+
+.cloud:hover {
+    filter: blur(15px);
+    transition: filter 0.3s;
+}
+
+.cloud:after, .cloud:before {
+    content: '';
+    position: absolute;
+    background: #f8fcff;
+    z-index: -1
+}
+
+.cloud:after {
+    content: '';
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-color: #f8fcff;
+    position: absolute;
+    top: -40%;
+    left: 50px;
+}
+
+.cloud:before {
+    width: 135px;
+    height: 135px;
+    top: -25%;
+    right: 50px;
+    border-radius: 200px;
+    -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+}
+
+.one {
+    position: relative;
+    left: -50px;
+    animation: moveone 35s linear infinite;
+    -webkit-animation: moveone 35s linear infinite;
+}
+
+.two {
+    position: absolute;
+    top: 15%;
+    right: -80px;
+    z-index: -1;
+    animation: movetwo 30s linear infinite;
+    -webkit-animation: movetwo 30s linear infinite;
+}
+
+.three {
+    position: absolute;
+    top: 30%;
+    left: -60px;
+    z-index: -1;
+    animation: movethree 15s linear infinite;
+    -webkit-animation: movethree 15s linear infinite;
+}
+
+@keyframes moveone {
+    from {
+        left: -400px;
+    }
+    to {
+        left: 400px;
+    }
+}
+
+@keyframes movetwo {
+    from {
+        left: 400px;
+    }
+    to {
+        left: -900px;
+    }
+}
+
+@keyframes movethree {
+    from {
+        left: -400px;
+    }
+    to {
+        left: 400px;
+    }
+}
+
+/*text*/
+
+.header {
+    position: relative;
+    top: -30%;
+    z-index: 999;
+    font-size: 38px;
+    text-align: center;
+    font-family: pt-sans-pro, sans-serif;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: #8e3411;
+    animation: typeL 6s;
+    white-space: nowrap;
+}
+
+.subheader {
+    position: relative;
+    top: -29%;
+    z-index: 999;
+    font-family: baskerville-urw, serif;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    font-size: 18px;
+    line-height: 25px;
+    color: #82c9db;
+}
+
+.author {
+    position: relative;
+    top: -27%;
+    font-size: 19px;
+    text-align: center;
+    font-family: pt-sans-pro, sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #8e3710;
+    animation: typeL 6s;
+}
+
+@keyframes typeL {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+/*wave*/
+
+.wave {
+    height: 100%;
+    width: 200%;
+    background-repeat: repeat-x;
+    position: absolute;
+}
+
+.wave1 {
+    background-image: url('image/wave1.png');
+    animation: waveL 20s linear infinite;
+}
+
+.wave2 {
+    background-image: url('image/wave3.png');
+    animation: waveR 10s linear infinite;
+    height: 120%;
+}
+
+.wave3 {
+    background-image: url('image/wave2.png');
+    animation: waveL 17s linear infinite;
+}
+
+@keyframes waveL {
+    0% {
+        transform: translateX(-20%) translateZ(0) scaleY(0.8);
+    }
+    25% {
+        transform: translateX(-50%) translateZ(0) scaleY(0.7);
+    }
+    50% {
+        transform: translateX(-20%) translateZ(0) scaleY(1);
+    }
+    75% {
+        transform: translateX(-50%) translateZ(0) scaleY(0.8);
+    }
+    100% {
+        transform: translateX(-20%) translateZ(0) scaleY(0.8);
+    }
+}
+
+@keyframes waveR {
+    0% {
+        transform: translateX(-30%) translateZ(0) scaleY(0.8);
+    }
+    25% {
+        transform: translateX(-50%) translateZ(0) scaleY(0.7);
+    }
+    50% {
+        transform: translateX(-30%) translateZ(0) scaleY(1.1);
+    }
+    75% {
+        transform: translateX(-50%) translateZ(0) scaleY(1);
+    }
+    100% {
+        transform: translateX(-30%) translateZ(0) scaleY(0.8);
+    }
+}
