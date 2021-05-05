@@ -181,12 +181,12 @@
 }
 
 .wave1 {
-    background-image: url('image/wave1.png');
+    background-image: url(../image/wave1.png);
     animation: waveL 20s linear infinite;
 }
 
 .wave2 {
-    background-image: url('image/wave3.png');
+    background-image: url('../image/wave3.png');
     animation: waveR 10s linear infinite;
     height: 120%;
 }
